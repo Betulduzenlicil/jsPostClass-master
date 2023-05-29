@@ -19,7 +19,11 @@ console.log("******* Objects *********")
 //     engine: 2000,
 //     speed: 5,
 //     color: ["Pink", "Black","blue", "green"],
-// }
+//     myObject:{ ad:"ali", soyad: "veli", yas:34},
+//     ali: function(){
+//       return this.brand + " "+ this.model
+//     },
+// };
 // console.log(car1)
 // console.log(car1.model);
 
@@ -36,7 +40,16 @@ console.log("******* Objects *********")
 
 // console.log(car1.brand)
 // console.log(car1.color[0])
+// console.log(car1.color[0][0])
 // console.log(car1.color)
+// console.log(car1.model)
+// console.log(car1.ali)
+// console.log(car1.ali())
+// console.log(car1.myObject)
+// console.log(car1.myObject.ad)
+// console.log(car1.myObject.ad[0])
+// console.log(car1.engine)
+// console.log(car1["speed"])
 
 // car2.color.forEach((c)=>console.log(c))
 // console.log(car2.engine) // undefined
@@ -45,8 +58,10 @@ console.log("******* Objects *********")
 //? Objenin değerinin değiştirilmesi
 
 // car1.speed =7
-// car1.color= "Morcivert"
+// car1.color= "Morcivert" //veya push ile arryae ekleme yaparız
 // car1.class="E"
+// car1.color.push("white")
+// console.log(car1.color)
 // console.log(car1)
 
 
@@ -93,8 +108,9 @@ console.log("******* Objects *********")
 //   this.name = name
 //   this.age = age
 //   this.salary = salary
-//   console.log(this)
+//   console.log(this) //objenin kendisini gösterir
 // }
+// console.log(Personel)
 
 // const person1 = new Personel("1234567890", "Ahmet Can", 33, 30000)
 // const person2 = new Personel("123456745454", "Mehmet Veli", 23, 10000)
@@ -126,8 +142,8 @@ console.log("******* Objects *********")
   //   return `${this.name} is ${this.calculateAge()} years old`
   // },
 //   summary: function (){
-//     console.log(this) //? window objesini refere eder.
-//     return `${this.name} is ${this.calculateAge()} years old` //hata vermez
+//     console.log(this) //? personel objesini refere eder. hata vermez
+//     return `${this.name} is ${this.calculateAge()} years old` 
 //   }
 // }
 
@@ -152,26 +168,27 @@ console.log("******* Objects *********")
 //* JSON => Javascript Object Notation
 //********************************************************
 
-const team = [
-  { name: "Ahmet", surname: "Can", job: "Developer", age: 30 },
-  { name: "Mary", surname: "Bary", job: "tester", age: 22 },
-  { name: "Hazel", surname: "Nut", job: "developer", age: 20 },
-]
+// const team = [
+//   { name: "Ahmet", surname: "Can", job: "Developer", age: 30 },
+//   { name: "Mary", surname: "Bary", job: "tester", age: 22 },
+//   { name: "Hazel", surname: "Nut", job: "developer", age: 20 },
+// ]
 
-console.log(team)
-console.log(team[1]) //? { name: "Mary", surname: "Bary", job: "tester", age: 22 },
-console.log(team[1].name) //? Mary
-console.log(team[2].age) //? 20
+// console.log(team)
+// console.log(team[1]) //? { name: "Mary", surname: "Bary", job: "tester", age: 22 },
+// console.log(team[1].name) //? Mary
+// console.log(team[2].age) //? 20
+// console.log(team[2]["age"]) //? 20
 
-console.log("************")
+// console.log("************")
 
 //* Ornek1: team dizisindeki job'lari tek tek yazdiriniz.
-team.forEach((p) => console.log(p.job))
+// team.forEach((p) => console.log(p.job))
 // team.map((p) => console.log(p.job))
 
 // //* Ornek2: age'leri bir artirarak yeni bir diziye saklayiniz.
-const personelAges = team.map((person) => person.age + 1)
-console.log(personelAges)
+// const personelAges = team.map((person) => person.age + 1)
+// console.log(personelAges)
 
 //* Ornek3: name ve surname'leri birlestirip buyuk harfe ceviren ve
 //* bunu fullName key'i ile saklayan, ayni zamanda age degerlerini 5
@@ -186,20 +203,20 @@ console.log(personelAges)
 // console.log(teamFullName)
 
 //? Alternative way
-const teamFullName1 = team.map((p) => ({
-  fullName: p.name.toUpperCase() + " " + p.surname.toUpperCase(),
-  age: p.age + 5,
-}))
+// const teamFullName1 = team.map((p) => ({
+//   fullName: p.name.toUpperCase() + " " + p.surname.toUpperCase(),
+//   age: p.age + 5,
+// }))
 
-console.log(teamFullName1)
+// console.log(teamFullName1)
 
-// //* Ornek4: Yasi(age) 22 'den kucuk esit olan kisilerin adlarini (name) listeyiniz.
-team.filter((p) => p.age <= 22).forEach((p) => console.log(p.name))
+// // //* Ornek4: Yasi(age) 22 'den kucuk esit olan kisilerin adlarini (name) listeyiniz.
+// team.filter((p) => p.age <= 22).forEach((p) => console.log(p.name))
 
-// //* Ornek5: 22 yasindan kucuk ve esit olanlarin isimlerini diziye saklayiniz.
-const teamUnder22 = team.filter((x) => x.age <= 22).map((p) => p.name)
-console.log(teamUnder22)
+// // //* Ornek5: 22 yasindan kucuk ve esit olanlarin isimlerini diziye saklayiniz.
+// const teamUnder22 = team.filter((x) => x.age <= 22).map((p) => p.name)
+// console.log(teamUnder22)
 
-// //* Ornek6: ortalama yasi hesaplayiniz.
-const avgAges = team.reduce((sum, person) => sum + person.age, 0) / team.length
-console.log("AVE AGE:", avgAges)
+// // //* Ornek6: ortalama yasi hesaplayiniz.
+// const avgAges = team.reduce((sum, person) => sum + person.age, 0) / team.length
+// console.log("AVE AGE:", avgAges)
