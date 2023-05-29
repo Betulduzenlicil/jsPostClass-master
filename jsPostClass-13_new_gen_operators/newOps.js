@@ -3,12 +3,12 @@
 //* ======================================================
 console.log("****** NEW OPERATORS *******")
 
-// const car = {
-//   brand: "BMW",
-//   model: 2020,
-//   engine:2000,
-//   colors: ["pink", "blue"],
-// }
+const car = {
+  brand: "BMW",
+  model: 2020,
+  engine:2000,
+  colors: ["pink", "blue"],
+}
 
 // // //? 1.Yontem (. notasyon)
 // const brand = car.brand
@@ -18,35 +18,39 @@ console.log("****** NEW OPERATORS *******")
 // console.log(car["model"])
 
 // //? 3. Destructure
-// const { brand: name, engine, colors } = car //? object destr.
+// const { brand, engine, colors } = car //? object destr.
+// const { brand:name, engine, colors } = car //? object destr.
 // console.log(engine, colors, name)
 
 // const { model } = car
 // console.log(model)
 
+// const{ model, engine, colors}= car
+// console.log(model, engine, colors)
+
 //* EXAMPLE: NESTED
-// const cars = {
-//   car1: {
-//     name: "BMW",
-//     model: 1990,
-//     engine: 1.6,
-//   },
-//   car2: {
-//     name: "Mercedes",
-//     model: 2022,
-//     engine: 2.0,
-//   },
-//   car3: ["anadol", "togg", "devrim"],
-//   car4: "kağnı",
-// }
+const cars = {
+  car1: {
+    name: "BMW",
+    model: 1990,
+    engine: 1.6,
+  },
+  car2: {
+    name: "Mercedes",
+    model: 2022,
+    engine: 2.0,
+  },
+  car3: ["anadol", "togg", "devrim"],
+  car4: "kağni",
+}
 
-// let { car1, car2, car4, car3 } = cars //? 1 seviye destr.
-// console.log(car2, car4)
+let { car1, car2, car4, car3 } = cars //? 1 seviye destr.
+console.log(car2, car4)
 
-// const { name: c1Name, model: c1Model } = car1 //? 2 seviye dest.
-// const { name: c2Name, model: c2Model } = car2
-// console.log(c1Name, c1Model)
-// console.log(c2Name, c2Model)
+const { name: c1Name, model: c1Model } = car1 //? 2 seviye dest.
+const { name: c2Name, model: c2Model } = car2
+console.log(c1Name, c1Model)
+console.log(c2Name, c2Model)
 
 //? Alternativly
 // const {
