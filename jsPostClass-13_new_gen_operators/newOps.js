@@ -135,12 +135,12 @@ console.log("*************")
 
 //?---Array destructıon
 
-const getProduct=()=>{
-  return ["Gümüs", "Huseyin", ["KADİR KUMRU"],"Betül"]
-}
-const [gümüs, huseyin, betül]= getProduct()
+// const getProduct=()=>{
+//   return ["Gümüs", "Huseyin", ["KADİR KUMRU"],"Betül"]
+// }
+// const [gümüs, huseyin, betül]= getProduct()
 
-console.log(gümüs, huseyin, betül)
+// console.log(gümüs, huseyin, betül)
 
 // //* function'un dondurdugu obje dogrudan dest. yapilabilir
 
@@ -208,7 +208,7 @@ console.log(gümüs, huseyin, betül)
 //   meslek: "tester",
 // }
 
-// const { meslek, yas, ...isim } = kisi
+// const { meslek, yas, ...isim } = kisi //meslek ve yaş dışındaki hepsi isim
 
 // console.log(meslek, yas)
 // console.log(isim)
@@ -223,9 +223,10 @@ console.log(gümüs, huseyin, betül)
 //? REST (...) ile non-iterable olan sayilari iterable hale (diziye)
 //? cevirmiş olduk.
 
-// const toplaminiAl = (...sayilar) => {
+// const toplaminiAl = (...sayilar) => { //0. indexden başla sonuna kadar git topla
 //   console.log(sayilar)
-//   return sayilar.reduce((t, v) => t + v, 0)
+//   return sayilar.reduce((t, v) => t + v, 0);
+ 
 // }
 // console.log("SONUC:", toplaminiAl(2, 5, 10, 4, 6, 8))
 
@@ -246,14 +247,23 @@ console.log(gümüs, huseyin, betül)
 // const tasitlar1 = [...karaAraclari, "Kamyon", ...ucanAraclar]
 // console.log(tasitlar1)
 
+// //?===================================
+// //*ÖRNEK:
 // const cumle = "Olmak ya da olmamak"
 
 // const karakter = [...cumle]
 // console.log(karakter)
 // console.log(cumle)
 
+//?=========================================
+//*ÖRNEK:
 // console.log("MAX:", Math.max(1, 3, 4, -1, 4))
+// console.log("MIN:", Math.min(1, 3, 4, -1, 4))
+
 // const rakamlar = [23, 45, 66, 77, 12, -1]
+// console.log(Math.min(...rakamlar));
+// console.log(Math.max(...rakamlar));
+
 
 //? MATH.MIN
 // console.log("MIN:", Math.min(...rakamlar))
@@ -283,18 +293,18 @@ console.log(gümüs, huseyin, betül)
 
 //? Object copying
 
-// const firstObj = { a: 1, b: 2, c: 3 }
-// const secondObj = { a: 2, d: 3, c: 4 }
+const firstObj = { a: 1, b: 2, c: 3 }
+const secondObj = { a: 2, d: 3, c: 4 }
 
-// const copiedFirstObj = { ...firstObj }
-// console.log(copiedFirstObj)
+const copiedFirstObj = { ...firstObj }
+console.log(copiedFirstObj)
 
-// copiedFirstObj.a = 44
+copiedFirstObj.a = 44
 // //? nesting olmadigi icin deep copy gibi davranir.
-// console.log(copiedFirstObj, firstObj)
+console.log(copiedFirstObj, firstObj)
 
-// const combinedObjs = { ...secondObj, ...firstObj }
-// console.log(combinedObjs)
+const combinedObjs = { ...secondObj, ...firstObj }
+console.log(combinedObjs)
 
 //? nested
 // const people = {
