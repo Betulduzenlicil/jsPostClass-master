@@ -133,24 +133,24 @@ const myLıst = document.getElementsByTagName("li")
 //* ========================================
 
 
-const listeler = document.querySelectorAll("ul li")
-console.log(listeler) //? NodeList(5) [li.list, li.list, li.list, li.list, li.list]
+// const listeler = document.querySelectorAll("ul li")
+// console.log(listeler) //? NodeList(5) [li.list, li.list, li.list, li.list, li.list]
 
-const listemArr=[...listeler]
-listeler.forEach((li)=>console.log(li))
+// const listemArr=[...listeler]
+// listeler.forEach((li)=>console.log(li))
 
 
-listemArr.forEach((li)=> console.log(li))
-listemArr.map((li)=> console.log(li))
+// listemArr.forEach((li)=> console.log(li))
+// listemArr.map((li)=> console.log(li))
 
-//? Alternative way
-for (const liste of listeler.values()){
-    console.log(liste)
-}
+// //? Alternative way
+// for (const liste of listeler.values()){
+//     console.log(liste)
+// }
 
-for (const liste of listeler.keys()){
-    console.log(liste)
-}
+// for (const liste of listeler.keys()){
+//     console.log(liste)
+// }
 
 
 
