@@ -3,11 +3,11 @@ console.log("**** CREATE NODE ****")
 //? YENİ BİR ELEMENT OLUŞTURMA
 
 //? örnek 1
-// const LangInput = document.querySelector("#input")
-// const text1 = document.createTextNode(LangInput.value)
-// LangInput.appendChild(text1)
-// const h1 = document.querySelector("h1")
-// h1.append(LangInput)
+const LangInput = document.querySelector("#input")
+const text1 = document.createTextNode(LangInput.value)
+LangInput.appendChild(text1)
+const h1 = document.querySelector("h1")
+h1.append(LangInput)
 //?--------------------------------------------------------
 //?örnek:2
 //? 1-(create-oluşturur)
@@ -57,31 +57,28 @@ yer.appendChild(newLi) // tag ve içeriği yerine bağla
 //?--------------------------------------------------------------------
 //? ÖRNEK:5  Javascriptten sonra listeye kendi adınızı yazdırınız
 
-// const newTag = document.createElement("span")
-// const newTextim = document.createTextNode(": Sen mi büyüksün ben mi?")
-// newTag.appendChild(newTextim)
-// const konum = document.querySelector(".list:nth-child(4)")
-// konum.appendChild(newTag)
+const newTag = document.createElement("span")
+const newTextim = document.createTextNode(": Sen mi büyüksün ben mi?")
+newTag.appendChild(newTextim)
+const konum = document.querySelector(".list:nth-child(4)")
+konum.appendChild(newTag)
 
 //! p blok element olduğundan alta geçti
-// const newTag = document.createElement("p")
-// const newTextim = document.createTextNode(": Sen mi büyüksün ben mi?")
-// newTag.appendChild(newTextim)
-// const konum = document.querySelector(".list:nth-child(4)")
-// konum.append(newTag)
+const newTag1 = document.createElement("p")
+const newTextim1 = document.createTextNode(": Sen mi büyüksün ben mi?")
+newTag1.appendChild(newTextim1)
+const konum1 = document.querySelector(".list:nth-child(4)")
+konum1.append(newTag1)
 
 
 
 
 
-//*=============ID CLASS============*/
+//*=============ID CLASS GİBİ ÖZELLİKLER EKLEME============*/
 
 //? 1. Yöntem
 
-// newP.id = "paragraf"
-// newP.className = "par center"
-// newP.name = "deneme"
-// newTag.clas= "new-li"
+Ö
 
 //? 2. setAttribute
 //?==========================
@@ -107,6 +104,9 @@ if(newP.classList.contains("border")){
 if(newP.classList.contains("border")){
     newP.classList.remove("border-2")
 }
+if (newP.classList.contains("new-class")) {
+    newP.classList.remove("new-class")
+  }
 
 
 //* classList.toogle()(bir class varsa kaldırır yoksa ekler)
@@ -132,19 +132,28 @@ console.log(newP.getAttribute("class"))
 
 //*=========YENİ BİR ELEMENT OLUŞTURUP VAR OLANIN ÜZERİNE EKLEME (INNERHTML)==========
 
+// const ul = document.querySelector("ul")
+// ul.innerHTML +=`
+// <li>C++</li>
+// <li>JAVA</li>
+// <li>c</li>
+// <li>go</li>`
+
+//*===============YENİ BİR ELEMENT OLUŞTURMA (INNERHTML)===============
+
+const newDiv = document.createElement("div")
 const ul = document.querySelector("ul")
 ul.innerHTML +=`
 <li>C++</li>
 <li>JAVA</li>
 <li>c</li>
-<li>go</li>
-`
-
-//*===============YENİ BİR ELEMENT OLUŞTURMA (INNERHTML)===============
-
-const newDiv = document.createElement("div")
+<li>go</li>`
 newDiv.id= "my-div"
+
 itemListSection.after(newDiv)
+
+
+
 
 newDiv.innerHTML += `
 <h2 class = "par center">Languages</h2>
