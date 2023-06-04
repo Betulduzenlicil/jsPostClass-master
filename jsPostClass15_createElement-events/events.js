@@ -62,13 +62,13 @@ addBtn.addEventListener("click", (e)=>{
 }
 })
 
-// İNPUTUN ÜZERİNDE İKEN BİR KLAVYE TUŞUNA BASILINCA ÇALIŞ
+//? İNPUTUN ÜZERİNDE İKEN BİR KLAVYE TUŞUNA BASILINCA ÇALIŞ
 document.querySelector("#input").addEventListener("keydown", (e)=>{
     console.log(e.code)
     console.log(e.keyCode)
 
 
-    //BASILAN TUŞ ENTER İSE
+    //?BASILAN TUŞ ENTER İSE
     if (e.code === "Enter"){
         addBtn.click() // add butonunun tıklama fonksiyonunu çalıştırırım
     }

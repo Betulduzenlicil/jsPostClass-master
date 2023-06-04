@@ -48,9 +48,9 @@ console.log("***** SELECTORS *****")
 //*===========================================
 //*          GETELEMENTSBYTAGNAME()
 //*===========================================
+// const myInputs = document.getElementsByTagName("input")
 
-const myInputs = document.getElementsByTagName("input")
-console.log(myInputs) //? [input#input, input#btn, input: input#input, btn: input#btn]
+// console.log(myInputs) //? [input#input, input#btn, input: input#input, btn: input#btn]
 
 
 //!HTML Collection ( Array-Like) döndürür
@@ -65,20 +65,21 @@ console.log(myInputs) //? [input#input, input#btn, input: input#input, btn: inpu
 
 //? Array e cevrilebilir
 
-const myLıst = document.getElementsByTagName("li")
+// const myLıst = document.getElementsByTagName("li")
 // const myLıstArr = [...myLıst]
 // console.log(myLıstArr)
 
 // myLıstArr.forEach((li)=>(li.style.color="red"))
 
-//? ALTERNATİVE wAY
+//? ALTERNATİVE WAY
+// const myLıst = document.getElementsByTagName("li")
 
 // const myLıstArr1 = Array.from(myLıst)//Array e cevirir
 // console.log(myLıstArr1)
 
 // myLıstArr1.map((li)=>(li.style.listStyleType = "none"))
 
-
+// const myInputs = document.getElementsByTagName("input")
 // const myInputsArr = [...myInputs]
 // console.log(myInputsArr)
 
@@ -93,8 +94,8 @@ const myLıst = document.getElementsByTagName("li")
 // listsArr.map((li) => console.log(li));
 
 // lists[2].innerHTML = "JAVASCRİPT LANGUAGE"
-// lists[2].innerHTML = `<h1>Javascript</h1>`
-// lists[3].innerText = `<h1>React</h1>`
+// lists[2].innerHTML = `<h1>Javascript</h1>` // H1 TİPİNDE YAZDI Javascript
+// lists[3].innerText = `<h1>React</h1>` // METİN ŞEKİLNDE YAZDI  <h1>React</h1>
 // lists[4].textContent = `<h1>VUE</h1>`
 
 // listsArr.map((li)=>(li.style.listStyleType= "none"))
@@ -102,7 +103,7 @@ const myLıst = document.getElementsByTagName("li")
 //* ========================================
 //*              QUERYSELECTOR()
 //* ========================================
-
+//! QUERY SELECTOR İLE İD TAG CLASS SEÇİLEBİLİR BU SECİÇİ AKIŞTA GÖRDÜĞÜ İLK ELEMENTİ SECER
 //? id seçildi
 // const header = document.querySelector("#header")
 // console.log(header)
@@ -137,7 +138,7 @@ const myLıst = document.getElementsByTagName("li")
 // console.log(listeler) //? NodeList(5) [li.list, li.list, li.list, li.list, li.list]
 
 // const listemArr=[...listeler]
-// listeler.forEach((li)=>console.log(li))
+// listeler.forEach((li)=>console.log(li)) //NODELİST YAPISININ İÇİNE DİREK FOREACH İLE GİRİLEBİLİYOR
 
 
 // listemArr.forEach((li)=> console.log(li))
