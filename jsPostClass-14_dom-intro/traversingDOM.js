@@ -16,28 +16,29 @@ console.log("**** TRAVERSING DOM ****")
 //* 1- Yukari Yonde traverse
 //*----------------------------------------------
 //! parentElement, parentNode
-const addItem = document.querySelector(".add-item")
-console.log(addItem)
+// const addItem = document.querySelector(".add-item")
+// console.log(addItem)
 
-console.log(addItem.parentElement) //? main
-console.log(addItem.parentNode.parentNode) //? body
+// console.log(addItem.parentElement) //? main
+// console.log(addItem.parentNode.parentNode) //? body
 
 //! closest(): belirtilen elementin parent'larin ilk uygun parent'i secer
 
-const list = document.querySelector(".list")
-console.log(list.textContent)
+// const list = document.querySelector(".list") // İLK LİST CLASINA SAHİP ELEMENTİ BULDU
+// console.log(list.textContent) //html
 
-console.log(list.closest("section")) //?//! closest(): belirtilen elementin parent'larin ilk uygun parent'i secer
+// console.log(list.closest("section")) //! closest(): belirtilen elementin parent'larin ilk uygun parent'i secer
 
-console.log(list.closest("body").querySelector("header h1").innerText)
+// console.log(list.closest("body").querySelector("header h1").innerText)// en yakın body nin içindeki header ı içindeki h1 i bul
 
 //* 2- Asagi Yonde traverse
 //*----------------------------------------------
 //? Children, firstElementChild, lastElementChild
+const addItem = document.querySelector(".add-item")
 
 console.log(addItem.children) //?HTMLCollection(3) [h2, input#input, input#btn, input: input#input, btn: input#btn]
 
-console.log(addItem.children[2]) //?
+console.log(addItem.children[2]) //? <input id="btn" type="button" value="ADD">
 
 console.log(addItem.firstElementChild) //? h2
 console.log(addItem.lastElementChild) //? ADD Buton
