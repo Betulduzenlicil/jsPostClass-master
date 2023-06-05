@@ -142,27 +142,27 @@ console.log(newP.getAttribute("class"))
 
 //*=========YENİ BİR ELEMENT OLUŞTURUP VAR OLANIN ÜZERİNE EKLEME (INNERHTML)==========
 
-const ul = document.querySelector("ul") // ul lerin bittiği yere ekler
-ul.innerHTML +=`
-<li>C++</li>
-<li>JAVA</li>
-<li>c</li>
-<li>go</li>`
+// const ul = document.querySelector("ul") // ul lerin bittiği yere ekler
+// ul.innerHTML +=`
+// <li>C++</li>
+// <li>JAVA</li>
+// <li>c</li>
+// <li>go</li>`
 
 //*===============YENİ BİR ELEMENT OLUŞTURMA (INNERHTML)===============
 
-// const newDiv = document.createElement("div") // yeni div oluşturup ona yeni ul ve li ekler
-// const ul = document.querySelector("ul")
-// ul.innerHTML +=`
-// <H2 class = "par center">LANGUAGES</H2>
-// <ul>
-// <li>C++</li>
-// <li>JAVA</li>
-// <li>C</li>
-// <li>go</li> </ul>`
-// newDiv.id= "my-div"
+const newDiv = document.createElement("div") // yeni div oluşturup ona yeni ul ve li ekler
+const ul = document.querySelector("ul")
+ul.innerHTML +=`
+<H2 class = "par center">LANGUAGES</H2>
+<ul>
+<li>C++</li>
+<li>JAVA</li>
+<li>C</li>
+<li>go</li> </ul>`
+newDiv.id= "my-div"
 
-// itemListSection.after(newDiv)
+itemListSection.after(newDiv)
 
 
 
