@@ -7,9 +7,12 @@ const scissorImg =document.getElementById("scissor")
 
 //? seçilen elemanların taşıyıcıları
 const yourChoiceDiv = document.getElementById("your-choice")
+const pcChoiceDiv= document.getElementById("pc-choice")
+
 
 //* ------- Variables ------- */
-
+let userSelectImg = document.createElement("img")
+let pcSelectImg = document.createElement("img")
 
 
 //* ------- Event Listeners ------- */
@@ -22,17 +25,26 @@ selectionArticle.addEventListener('click', (e) => {
         userSelectImg.src = `./assets/${e.target.id}.png`
         userSelectImg.alt = e.target.id
         yourChoiceDiv.appendChild(userSelectImg)
+        createPcSelection()
         
     }
 });
 
+//* ------- Functions ------- */
+
 const createPcSelection =() =>{
-    const pcArr = ["rock", "papaer", "scissor"]
-    const pcRandom = psArr[Math.floor(Math.random()*3)]
+    const pcArr = ["rock", "paper", "scissor"]
+    const pcRandom = pcArr[Math.floor(Math.random()*3)]
+    pcSelectImg.src=`./assets/${pcRandom}.png`
+    pcSelectImg.alt=pcRandom
+    pcChoiceDiv.appendChild(pcSelectImg)
+    calculateResult()
 }
 
+const calculateResult = ()=>{
+    
+}
 
-//* ------- Functions ------- */
 
 
 // let image = document.createElement("img")
