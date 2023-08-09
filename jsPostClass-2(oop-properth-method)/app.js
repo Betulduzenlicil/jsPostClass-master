@@ -117,3 +117,58 @@
 // console.log(person);
 // *object'in method'una atanmis degeri cagirma
 // console.log(person.fullName());//property den farki ()
+
+
+
+//?ARİTMETİKSEL OPERATÖRLER
+
+//!toplama operatörü
+
+// var deneme = 5;
+// varDeneme=6;
+// let myVar=5;
+// const myVar1=6;
+
+// const num1= 10;
+// const num2=69;
+// const toplam= num1 +num2;
+// console.log(toplam);
+
+
+// const msg1="Hello"
+// const msg2= "World!"
+// const mesaj = msg1 + msg2;
+// console.log(mesaj);
+
+
+// const name= "BETÜL"
+// const surname= "Cil"
+// const fullName= name + " "+ surname
+// console.log(fullName)
+
+
+// const fuLLName2= `${name} ${surname}`;
+// console.log(fuLLName2);
+
+
+// const num3="6"
+// const num4="7"
+// console.log(num3 + num4)
+
+// console.log(num3 +7); //? hata vermez concatanate yapar
+// console.log(6 + num4);
+// console.log(typeof(7 +num3), 7 + num3)
+
+
+//!çıkarma operatörü
+
+const x=55;
+const y=44;
+console.log(x-y);
+
+const myNum= "1"
+
+console.log(x-myNum)//? stringi number a cevirdi
+
+const yourNum= "one"
+console.log(x-yourNum); //? NaN
