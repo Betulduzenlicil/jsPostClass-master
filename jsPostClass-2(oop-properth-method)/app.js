@@ -162,13 +162,77 @@
 
 //!çıkarma operatörü
 
-const x=55;
-const y=44;
-console.log(x-y);
+// const x=55;
+// const y=44;
+// console.log(x-y);
 
-const myNum= "1"
+// const myNum= "1"
 
-console.log(x-myNum)//? stringi number a cevirdi
+// console.log(x-myNum)//? stringi number a cevirdi
 
-const yourNum= "one"
-console.log(x-yourNum); //? NaN
+// const yourNum= "one"
+// console.log(x-yourNum); //? NaN
+
+
+//! Çarpma operatörü
+//  let carp1= 4;
+//  let carp2=5;
+//  console.log(carp1*carp2);
+
+//  console.log("a"*"b");
+//  console.log("a"*3);
+//  console.log(typeof("5"*"9"),"5"*"9");
+
+
+//!Bölme operatörü
+
+// const böl1=81;
+// const böl2=9;
+// console.log(böl1/böl2);
+// console.log(böl1/"9");
+// console.log(böl1/"dokuz");
+
+// console.log(böl2/0);
+// console.log(-61/0); //? infinity sonsuzluk
+
+// console.log(0/5);
+// console.log(0/-5);
+// console.log(57/9);
+
+
+//!Mod alma operatörü
+// const mod1 =52
+// const mod2= 9
+// console.log(mod1 % mod2);
+
+
+// const benimSayım= 967;
+// const birlerBas=benimSayım%10
+// console.log(birlerBas);
+// const onlarBas= (benimSayım%100)/10
+// console.log(onlarBas);
+
+// const yüzlerBas= benimSayım/100
+// console.log(yüzlerBas);
+// console.log(`yüzlerBas:${Math.trunc(yüzlerBas)}`);
+// console.log(`onlarBas:${Math.trunc(onlarBas)}`);
+// console.log(`birlerBas:${Math.trunc(birlerBas)}`);
+
+// const randomNum=  Math.random()
+// console.log(randomNum);
+
+// const randomNum2= Math.random()*10
+// console.log(randomNum2);
+// console.log(Math.round(Math.random()*10));
+
+//!ÜS ALMA OPERATÖRÜ
+// const üs1=2;
+// const üs2=3;
+// console.log(üs1**üs2);
+
+// const pi=3.14;
+// const r= 5;
+// const area= pi*r**2;
+// console.log(`Dairenin alanı:${area}`);
+
+//!Artırma ve eksiltme operatörleri
