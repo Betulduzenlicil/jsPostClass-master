@@ -293,7 +293,7 @@ let num15 = 3;
 // const user1 = prompt("Lütfen bir sayı griniz: ");
 // const user2 = prompt("Lütfen bir sayı griniz: ");
 // console.log(user1);
-// console.log(user2);
+// console.log(user2);23
 // const isSame = user1 == user2;
 // console.log(isSame);
 // console.log("'10'" == "10"); //false
@@ -301,7 +301,7 @@ let num15 = 3;
 // console.log(true == 1); //true
 // console.log(false == 0); //true
 // console.log(null == undefined); // true
-// true boolean değeri 1 sayısı ile eşit kabul edilir, null ve undefined ise birbirine eşit kabul edilir.
+//true boolean değeri 1 sayısı ile eşit kabul edilir, null ve undefined ise birbirine eşit kabul edilir.
 // console.log(true === 1); // false
 // console.log(null === undefined); // false
 // console.log(typeof null, typeof undefined); // false
@@ -343,7 +343,7 @@ let num15 = 3;
 
 // console.log(5 && "Merhaba"); // "Merhaba"
 // console.log(0 && "Dünya"); // 0
-// // && operatoru ilk gördüğü falsy veya false değerini döner.
+// && operatoru ilk gördüğü falsy veya false değerini döner.
 // console.log(5 && 0); // 0
 // console.log(true && false); // false
 
