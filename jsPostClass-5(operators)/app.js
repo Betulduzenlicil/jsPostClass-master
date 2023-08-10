@@ -441,14 +441,14 @@ let num15 = 3;
 // console.log(totalMoney)
 
 //* ALternatif olarak parseInt() ve parseFloat() da kullanilabilir.
-// const dolarInt = parseInt(dolar) //? tamsayiya cevirir
-// console.log(dolarInt)
-// const tlFloat = parseFloat(tl) //? virgüllü sayiya çevirir
-// console.log(tlFloat)
+const dolarInt = parseInt(dolar) //? tamsayiya cevirir
+console.log(dolarInt)
+const tlFloat = parseFloat(tl) //? virgüllü sayiya çevirir
+console.log(tlFloat)
 
-// console.log(parseFloat(null)) //? NaN
-// console.log(parseFloat("")) //? NaN
-// console.log(parseFloat(undefined)) //? NaN
+console.log(parseFloat(null)) //? NaN
+console.log(parseFloat("")) //? NaN
+console.log(parseFloat(undefined)) //? NaN
 
 //? String
 // const myNumber3 = 2000.5
