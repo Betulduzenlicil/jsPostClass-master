@@ -10,7 +10,7 @@ console.log("****** WHILE *******");
 // ##
 // let i = 1;
 // while (i <= 10) {
-//   console.log(i);
+//   console.log(i, "BYE");
 //   i++;
 // }
 // console.log("BYE");
@@ -18,7 +18,7 @@ console.log("****** WHILE *******");
 
 // let i= 0;
 // while(i<10){
-//   console.log("Merhaba"); i++;
+//   console.log(i, "Merhaba"); i++;
  
 // }
 
@@ -37,21 +37,21 @@ console.log("****** WHILE *******");
 //? not girmeye zorlayan kodu while dongusu ile yaziniz.
 
 
-// let num =+prompt("Enter your number (0-100)")
-// while (num <0 || num>100){
-//   console.log(`${num} lütfen geçerli aralıkta sayı giriniz`);
-//   num= +prompt("Başka sayı giriniz")  
-//   }
-// console.log("Başardınız")
+let num =+prompt("Enter your number (0-100)")
+while (num <0 || num>100){
+  console.log(`${num} lütfen geçerli aralıkta sayı giriniz`);
+  num= +prompt("Başka sayı giriniz")  
+  }
+console.log("Başardınız")
 
 
 //! ------  DO - WHILE -------
 // let not2;
 // do {
 //   not2 = prompt("Lütfen 0-100 arasinda bir not giriniz:");
-//   // if (not < 0 || not > 100) {
-//   //   alert("Not 0'dan küçük veya 100'den büyük olamaz")
-//   // }
+// if (not < 0 || not > 100) {
+//   alert("Not 0'dan küçük veya 100'den büyük olamaz")
+// }
 //   console.log(not2);
 // } while (not2 < 0 || not2 > 100);
 

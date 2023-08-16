@@ -16,10 +16,10 @@ console.log(" **** FOR ****");
 //     document.getElementById("for").innerHTML+= "<br/>" + "Betül"
 // }
 // for (let i=1; i<=10;i++){
-//        console.log(i,"Merhaba")
-//        console.log(`${i}.Merhaba`)
-//        console.log(`BETÜL`)
-//     }
+    //    console.log(i,"Merhaba")
+    //    console.log(`${i}.Merhaba`)
+    //    console.log(`BETÜL`)
+    // }
 
 // //? 100 adet cikti veren kodu yaziniz.
 
@@ -57,13 +57,14 @@ console.log(" **** FOR ****");
 // let sum = 0 //* Global degisken
 
 // for (let i = 1; i <= n; i++) {
-//   //! i lokal degiskendir
-//   //   sum = sum + i
+//  //! i lokal degiskendir
+//   sum = sum + i
 //   sum += i //* kisa hali
 //   console.log(sum)
 // }
-// // console.log(i)  //! Error
+// console.log(i)  //! Error
 // console.log(`SUM: ${sum}`)
+
 // *örnekler
 //?1- 1 den 10 kadar olan sayıların toplamını yazdıran program:
 
@@ -77,8 +78,8 @@ console.log(" **** FOR ****");
 //     sum +=i
 //     console.log(sum)  
 // }
-// // console.log(sum)
-// // document.getElementById("for").innerHTML+= "<br/>" + sum;
+// console.log("1 den", `${n}: `, "ya kadar olan sayıların toplamı" , `${sum}: `)
+// document.getElementById("for").innerHTML+= "<br/>" + sum;
 
 
 
@@ -90,9 +91,9 @@ console.log(" **** FOR ****");
 
 // let sayı= prompt("sayınızı yazınız")
 // for (let i=0; i<=sayı; i++){
-//     let newSayı=Math.round(Math.random() *10)
+//     let newSayı=Math.round(Math.random() *100)
 //     console.log(newSayı)
-//     document.getElementById("for").innerHTML+= "<br/>" + newSayı;
+ //     document.getElementById("for").innerHTML+= "<br/>" + newSayı;
 // }
 
 
@@ -103,7 +104,7 @@ console.log(" **** FOR ****");
 
 // for (let sayac = 1; sayac <= adet; sayac++) {
 //   const rasgeleSayi = Math.round(Math.random() * 100);
-//   //   rasgeleSayi++ //*!Uncaught TypeError: Assignment to constant variable.
+ //   rasgeleSayi++ //*!Uncaught TypeError: Assignment to constant variable.
 //   console.log(`${sayac}. sayiniz : ${rasgeleSayi}`);
 // }
 //* NOT:
