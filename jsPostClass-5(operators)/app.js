@@ -221,12 +221,12 @@ const benimSayim = 967;
 // number1 = number1 + 1// 7
 // let number = 5;
 // let number1 = number++;
-// console.log(number1);
-// console.log(number);
+// console.log(number1); //5
+// console.log(number);//6
 
 // let number1 = ++number;
-// console.log(number1);
-// console.log(number);
+// console.log(number1); //6
+// console.log(number); //6
 // let number1New = number1++; // önce atadı sonrasında number1 değişkenini bir number1dı
 // console.log(number1New); // 6
 // console.log(number1); // 7
@@ -338,7 +338,7 @@ let num15 = 3;
 
 //! && and
 // console.log(true && true); // true
-// console.log("" && true); // ''
+console.log("" && true); // ''
 // console.log(" " && true && 2 && 6 && "ali" && "veli" && true); // true
 
 // console.log(5 && "Merhaba"); // "Merhaba"
@@ -353,7 +353,7 @@ let num15 = 3;
 // console.log(5 || 0); // 5
 // console.log("" || "Merhaba"); // "Merhaba"
 // console.log("" || 0); // 0
-// // || operatoru true ve truthy değer arar. ilk gördüğü true veya truthy döner.Bulamazsa son gördüğü false veya falsy değeri döner.
+// || operatoru true ve truthy değer arar. ilk gördüğü true veya truthy döner.Bulamazsa son gördüğü false veya falsy değeri döner.
 
 // ! not
 // console.log(!true); // false

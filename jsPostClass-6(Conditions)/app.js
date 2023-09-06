@@ -106,7 +106,7 @@
 // const not = +prompt("Not: ");
 
 // let mesaj = not >= 50 ? "Gectiniz" : "Kaldiniz";
-// // console.log(mesaj);
+// console.log(mesaj);
 
 // document.querySelector(".trnr").innerHTML = mesaj;
 
